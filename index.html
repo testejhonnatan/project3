@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="node_modules/bootstrap/compiler/bootstrap.css" rel="stylesheet"/>
+    <link href="Css/estilo.css" rel="stylesheet"/>
+    <link href="node_modules/font-awesome/css/font-awesome.css"/>
+    <link href="Php/email.php" rel="">
+    <script src="https://kit.fontawesome.com/c2eaecad4c.js"></script>
+    <title>RBM Consultoria</title>
+</head>
+<body>
+<!--Inicio menu-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="Imagens/RBM-Jurídico.png" class="card-img-top"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-2 btn-primary" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-2 btn-primary" href="#convenios">Convênios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-2 btn-primary" href="#rbm">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-2 btn-primary" href="#vantagem">Solicitar Análise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-2 btn-primary" href="#contato">Contato</a>
+                    </li>
+                </ul>
+
+            </div>
+            <ul class="navbar-nav">
+                <a class="btn btn-info mx-5 mb-1" href="http://191.252.182.249/index.xhtml" target="_blank" >Portal Consultor</a>
+                <a class="mb-1 btn btn-info" href="#" target="_blank" >RBM Juridico</a>
+            </ul>
+        </div>
+    </nav>
+<!--Fim Menu-->
+<!--Começo Carrosel-->
+    <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" >
+            <li data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#mainSlider" data-bs-slide-to="1"></li>
+            <li data-bs-target="#mainSlider" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="max-height: 90vh">
+                <img src="Imagens/imagem1.jpg" class="img-fluid d-block w-100" style="margin: auto">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Crédito Consignado e na RBM Consultoria</h3>
+                    <p>Temos as menores taxas do mercado</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="max-height: 90vh">
+                <img src="Imagens/2.jpg" class="img-fluid d-block w-100" style="margin: auto">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Estamos interessados em seu sucesso</h3>
+                    <p>Estamos sempre buscando estratégias alinhadas ao momento de sua vida.</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="max-height: 90vh">
+                <img src="Imagens/3.jpg" class="img-fluid d-block w-100" >
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Nos preocupamos com você!!</h3>
+                    <p>Temos otimos consultores, e estamos a disposição para lhe dar o melhor negocio.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#mainSlider" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next" href="#mainSlider" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only" id="convenios"></span>
+        </a>
+
+    </div>
+<!--Fim Carrosel-->
+
+<!--Inicio Cards Convenios-->
+    <div id="rbm" class="container my-5 mx-auto">
+        <div class="row">
+            <div class="col-12 text-center my-5 text-dark">
+                <h1>Conheça nossos Convênios</h1>
+            </div>
+        </div>
+        <div>
+            <p>
+                <a class="btn btn-info" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Aposentados e Pensionistas do INSS</a>
+                <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Servidores Federais</button>
+                <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Servidores Estaduais</button>
+                <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">Servidores Municipais</button>
+            </p>
+        </div>
+        <div class="row mb-5">
+            <div class="col-sm-3">
+                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <img class="card-img" src="Imagens/idoso.jpg">
+                    <div class="card card-body">
+                        <h6 class="card-title">RBM Consultoria garante com que você aproveite muito mais a sua melhor idade!</h6>
+                        <h6 class="card-subtitle mb-2 ">Facilitamos o pagamento do seu consignado descontando direto do seu contracheques, sem dor de cabeça!</h6>
+                        <h6 class="card-subtitle mb-2 ">Ágil e sem burocracia, garantimos facilidade e segurança na liberação do seu crédito!</h6>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <img class="card-img" src="Imagens/Federal.jpg">
+                    <div class="card card-body">
+                        <h6 class="card-title">A RBM Consultoria oferece excelente benefícios para funcionários públicos federais estarem realizando seus sonhos!</h6>
+                        <h6 class="card-subtitle mb-2 ">Facilitamos o pagamento do seu consignado descontando direto do seu contracheques, sem dor de cabeça!</h6>
+                        <h6 class="card-subtitle mb-2 ">Ágil e sem burocracia, garantimos facilidade e segurança na liberação do seu crédito!</h6>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="collapse multi-collapse" id="multiCollapseExample3">
+                    <img class="card-img" src="Imagens/estadual.jpg">
+                    <div class="card card-body">
+                        <h6 class="card-title">A RBM Consultoria oferece praticidade do crédito consignado para funcionários públicos estaduais de Goiás</h6>
+                        <h6 class="card-subtitle mb-2 ">Facilitamos o pagamento do seu consignado descontando direto do seu contracheques, sem dor de cabeça!</h6>
+                        <h6 class="card-subtitle mb-2 ">Ágil e sem burocracia, garantimos facilidade e segurança na liberação do seu crédito!</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="collapse multi-collapse" id="multiCollapseExample4">
+                    <img class="card-img" src="Imagens/Municipal.jpg">
+                    <div class="card card-body">
+                        <h6 class="card-title"> A RBM Consultoria também oferece as vantagens do Crédito consignado para todos os servidores municipais de Goiás</h6>
+                        <h6 class="card-subtitle mb-2 ">Facilitamos o pagamento do seu consignado descontando direto do seu contracheques, sem dor de cabeça!</h6>
+                        <h6 class="card-subtitle mb-2 ">Ágil e sem burocracia, garantimos facilidade e segurança na liberação do seu crédito!</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!--Fim Cards Convenios-->
+<!--Sobre-->
+    <div class="container my-5 mx-auto align-items-center">
+        <div class="col-12 text-center my-5 text-dark">
+            <h1>Sobre RBM Consultoria</h1>
+            <p  >Texto sobre a RBM Consultoria Financeira</p>
+        </div>
+        <div class="row mb-auto">
+            <div class="col-sm-4 my-3">
+                <div class="card">
+                    <img class="card-img" src="Imagens/fachada1.jpeg">
+                </div>
+            </div>
+            <div class="col-sm-4 my-3">
+                <div class="card">
+                    <img class="card-img" src="Imagens/entrada3.jpeg">
+                </div>
+            </div>
+            <div class="col-sm-4 my-3">
+                <div class="card">
+                    <img class="card-img" src="Imagens/entrada2.jpeg">
+                </div>
+            </div>
+            <div class="col-sm-4 my-3">
+                <div class="card">
+                    <img class="card-img" src="Imagens/entrada4.jpeg">
+                </div>
+            </div>
+            <div class="col-sm-4 my-3" id="vantagem">
+                <div class="card">
+                    <img class="card-img" src="Imagens/entrada1.jpeg">
+
+                </div>
+
+            </div>
+        </div >
+    </div>
+<!--Fim Sobre-->
+
+<!--Formulário Modal-->
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h6 class="display-4"><i class="fas fa-paper-plane text-info"></i> Socilitar Análise</h6>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-sm-5">
+                <div class="card">
+                    <div class="col-sm-12 col-md-10 col-lg-8" style="margin: auto">
+                        <form action="Php/email.php" method="post" class="row g-3 needs-validation" novalidate>
+                            <div class="col-12">
+                                <label for="validationCustom01" class="my-1 form-label" id="Analise">Nome</label>
+                                <input type="text" class="form-control" id="validationCustom01" name="name" placeholder="Nome Completo" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="validationCustom02" class="form-label">Número</label>
+                                <input type="text" class="form-control" id="validationCustom02" name="num" placeholder="(xx) x xxxxxxxx" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="validationCustom04" class="form-label">Cidade</label>
+                                <input type="text" class="form-control" id="validationCustom03" name="cidade" placeholder="Goiania" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="validationCustom04" class="form-label">Valor Desejado</label>
+                                <input type="text" class="form-control" id="validationCustom04" name="valor" placeholder="R$" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+
+                            <div class="col-md-5">
+                                <label for="validationCustom04" class="form-label">Orgão</label>
+                                <select class="form-select" id="validationCustom05" name="orgao" required>
+                                    <option selected disabled value="">Escolha...</option>
+                                    <option>INSS</option>
+                                    <option>Servidor Federal</option>
+                                    <option>Servidor Estadual</option>
+                                    <option>Servidor Municipal</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Selecione um orgão válido!
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <button class="btn btn-info mb-4" type="submit">Solicitar Análise</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="contato">
+            <div class="col-12"><hr></div>
+
+            <div class="my-2 col-sm-4">
+                <h3 class="text-center"><i class="fas fa-map-marker-alt text-danger"></i> Como chegar</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.003941838723!2d-49.26156688513365!3d-16.676686188508224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef1ff852439b9%3A0x36fb01e370815a4a!2sRBM%20CONSULTORIA!5e0!3m2!1spt-BR!2sbr!4v1622391044858!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <p class="text-center my-1">R. 9 - St. Central, Goiânia - GO, 74023-040</p>
+            </div>
+
+            <div class="my-2 col-sm-4">
+
+            </div>
+
+            <div class="my-2 col-sm-2">
+                <h3 class="mx-2"><i class="far fa-user-circle"></i> Social</h3>
+                <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+                    <a class="btn btn-outline-face text-blue1 my-2 " href="#" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a>
+                    <a class="btn btn-outline-insta text-pink my-2" href="https://www.instagram.com/rbm_consultoria/" target="_blank"><i class="fab fa-instagram"></i> Intagram</a>
+                </div>
+                <h4 class="text-center my-2"><i class="fas fa-phone-alt"></i> Contato</h4>
+            </div>
+
+            <div class="col-sm-4"></div>
+
+        </div>
+    </div>
+
+
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.js" ></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+</body>
+</html>

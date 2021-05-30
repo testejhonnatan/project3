@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Fonte';
+    src: url("Fontes/Staatliches-Regular.ttf");
+}
+body{
+    font-family: 'Fonte';
+}
