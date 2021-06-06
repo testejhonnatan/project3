@@ -5,3 +5,50 @@
 body{
     font-family: 'Fonte';
 }
+
+@media (max-width: 425px) {
+    #mainSlider{
+        margin-top: 100px;
+    }
+    #mainSlider .carousel-caption{
+        top: 55%;
+    }
+    #mainSlider .carousel-caption h3{
+        font-size: 18px;
+        margin-bottom: 200px;
+    }
+    #mainSlider .carousel-caption p{
+        display: none;
+    }
+    h1{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    p{
+        font-size: 15px;
+    }
+
+    iframe{
+        width: 90%;
+        height: 50%;
+    }
+    #form .col-sm-12{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    #fts .col-sm-4{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    #rbm p{
+        width: 90%;
+        margin: 5%;
+    }
+    #rbm .col-sm-3{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}

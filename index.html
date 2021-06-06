@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link href="node_modules/bootstrap/compiler/bootstrap.css" rel="stylesheet"/>
     <link href="Css/estilo.css" rel="stylesheet"/>
     <link href="node_modules/font-awesome/css/font-awesome.css"/>
@@ -11,6 +10,7 @@
     <script src="https://kit.fontawesome.com/c2eaecad4c.js"></script>
     <title>RBM Consultoria</title>
     <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+    <script src="node_modules/bootstrap/js/dist/validarform.js"></script>
 
 </head>
 <body>
@@ -47,6 +47,7 @@
         </div>
     </nav>
 <!--Fim Menu-->
+
 <!--Começo Carrosel-->
     <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
 
@@ -58,21 +59,21 @@
         <div class="carousel-inner">
             <div class="carousel-item active" style="max-height: 90vh">
                 <img src="Imagens/imagem1.jpg" class="img-fluid d-block w-100" style="margin: auto">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-md-block">
                     <h3>Crédito Consignado e na RBM Consultoria</h3>
                     <p>Temos as menores taxas do mercado</p>
                 </div>
             </div>
             <div class="carousel-item" style="max-height: 90vh">
                 <img src="Imagens/2.jpg" class="img-fluid d-block w-100" style="margin: auto">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-md-block">
                     <h3>Estamos interessados em seu sucesso</h3>
                     <p>Estamos sempre buscando estratégias alinhadas ao momento de sua vida.</p>
                 </div>
             </div>
             <div class="carousel-item" style="max-height: 90vh">
                 <img src="Imagens/3.jpg" class="img-fluid d-block w-100" >
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-md-block">
                     <h3>Nos preocupamos com você!!</h3>
                     <p>Temos otimos consultores, e estamos a disposição para lhe dar o melhor negocio.</p>
                 </div>
@@ -101,10 +102,10 @@
         </div>
         <div>
             <p>
-                <a class="mx-2 btn btn-info" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Aposentados e Pensionistas do INSS</a>
-                <button class="mx-2 btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Servidores Federais</button>
-                <button class="mx-2 btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Servidores Estaduais</button>
-                <button class="mx-2 btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">Servidores Municipais</button>
+                <a class="mx-2 my-2 btn btn-info" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Aposentados e Pensionistas do INSS</a>
+                <button class="mx-2 my-2 btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Servidores Federais</button>
+                <button class="mx-2 my-2 btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Servidores Estaduais</button>
+                <button class="mx-2 my-2 btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">Servidores Municipais</button>
             </p>
         </div>
         <div class="row mb-5">
@@ -154,8 +155,9 @@
 
     </div>
 <!--Fim Cards Convenios-->
+
 <!--Sobre-->
-    <div class="container my-5 mx-auto align-items-center">
+    <div id="fts" class="container my-5 mx-auto align-items-center">
         <div class="col-12 text-center my-5 text-dark">
             <h1>Sobre RBM Consultoria</h1>
             <p  >Texto sobre a RBM Consultoria Financeira</p>
@@ -193,8 +195,8 @@
     </div>
 <!--Fim Sobre-->
 
-<!--Formulário Modal-->
-    <div class="container my-3">
+<!--Formulário-->
+    <div id="form" class="container my-3">
         <div class="row">
             <div class="col-12 text-center">
                 <h6 class="display-4"><i class="fas fa-paper-plane text-info"></i> Socilitar Análise</h6>
@@ -204,86 +206,69 @@
             <div class="col-sm-5">
                 <div class="card">
                     <div class="col-sm-12 col-md-10 col-lg-8" style="margin: auto">
-                        <form action="Php/email.php" method="post" class="row g-3 needs-validation" novalidate>
-                            <div class="col-12">
-                                <label for="validationCustom01" class="my-1 form-label" id="Analise">Nome</label>
-                                <input type="text" class="form-control" id="validationCustom01" name="name" placeholder="Nome Completo" required>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
+                        <form name="form" action="Php/email.php" method="post" class="row g-3 needs-validation">
+                            <div class="imput">
+                                <label class="my-2">Nome</label>
+                                <input class="form-control" required type="text" name="name">
+                                <span class="error"></span>
                             </div>
-                            <div class="col-12">
-                                <label for="validationCustom02" class="form-label">Número</label>
-                                <input type="text" class="form-control" id="validationCustom02" name="num" placeholder="(xx) x xxxxxxxx" required>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
+                            <div class="imput">
+                                <label class="form-label">Número</label>
+                                <input class="form-control"  type="text" name="num" required>
+                                <span class="error"></span>
                             </div>
 
-                            <div class="col-12">
-                                <label for="validationCustom04" class="form-label">Cidade</label>
-                                <input type="text" class="form-control" id="validationCustom03" name="cidade" placeholder="Goiania" required>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
+                            <div class="imput">
+                                <label >Cidade</label>
+                                <input class="form-control"  type="text" name="cid" required>
+                                <span class="error"></span>
                             </div>
 
-                            <div class="col-12">
-                                <label for="validationCustom04" class="form-label">Valor Desejado</label>
-                                <input type="text" class="form-control" id="validationCustom04" name="valor" placeholder="R$" required>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
+                            <div class="imput">
+                                <label >Valor Desejado</label>
+                                <input class="form-control"  type="text" name="valor" required>
+                                <span class="error"></span>
                             </div>
 
-                            <div class="col-md-5">
-                                <label for="validationCustom04" class="form-label">Orgão</label>
-                                <select class="form-select" id="validationCustom05" name="orgao" required>
+                            <div class="imput">
+                                <label >Orgão</label>
+                                <select  class="form-select"  name="org" required>
                                     <option selected disabled value="">Escolha...</option>
                                     <option>INSS</option>
                                     <option>Servidor Federal</option>
                                     <option>Servidor Estadual</option>
                                     <option>Servidor Municipal</option>
                                 </select>
-                                <div class="invalid-feedback">
-                                    Selecione um orgão válido!
-                                </div>
+                                <span class="error"></span>
                             </div>
-                            <div class="col-10">
-                                <button class="btn btn-info mb-4" type="submit">Solicitar Análise</button>
-                            </div>
+
+                            <button class=" my-3 btn btn-info" type="submit">Solicitar Análise</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+<!--Fim do Formulário-->
+
+<!--Inicio Rodape-->
         <div class="row" id="contato">
             <div class="col-12"><hr></div>
 
             <div class="my-2 col-sm-3">
                 <h3 class="text-center"><i class="fas fa-map-marker-alt text-danger"></i> Como chegar</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.003941838723!2d-49.26156688513365!3d-16.676686188508224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef1ff852439b9%3A0x36fb01e370815a4a!2sRBM%20CONSULTORIA!5e0!3m2!1spt-BR!2sbr!4v1622391044858!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.003941838723!2d-49.26156688513365!3d-16.676686188508224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef1ff852439b9%3A0x36fb01e370815a4a!2sRBM%20CONSULTORIA!5e0!3m2!1spt-BR!2sbr!4v1622391044858!5m2!1spt-BR!2sbr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 <p class="text-center my-1">R. 9 - St. Central, Goiânia - GO, 74023-040</p>
             </div>
 
-            <div class="my-2 col-sm-3">
+            <div class="my-2 col-sm-6">
             </div>
 
             <div class="my-2 col-sm-2">
                 <h3 class="mx-2"><i class="far fa-user-circle"></i> Social</h3>
                 <div class="btn-group-vertical btn-block btn-group-lg" role="group">
-                   <!-- <a class="btn btn-outline-face text-blue1 my-2 " href="#" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a> -->
                     <a class="btn btn-outline-insta text-pink my-2" href="https://www.instagram.com/rbm_consultoria/" target="_blank"><i class="fab fa-instagram"></i> Intagram</a>
                 </div>
             </div>
-            <!--
-            <div class="mb-3 col-sm-4">
-                <div class="my-2 col-sm-4">
-                    <h4 class="text-center my-2"><i class="fas fa-phone-alt w-25"></i> Contato</h4>
-                    <h6 class="mx-4">Fone: </h6>
-                </div>
-            </div>
-            -->
         </div>
     </div>
 
